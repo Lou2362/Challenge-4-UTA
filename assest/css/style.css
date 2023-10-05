@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Colors from https://www.materialpalette.com/blue-grey/blue */
+:root {
+  --dark-primary-color: #455a64;
+  --light-primary-color: #cfd8dc;
+  --primary-color: #607d8b;
+  --text-icons: #ffffff;
+  --accent-color: #448aff;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --divider-color: #bdbdbd;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  color: var(--primary-text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+header {
+  flex: 0 0 60px;
+  background-color: var(--light-primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+header #view-scores {
+  color: var(--dark-primary-color);
+}
+
+main {
+  flex: 0 0 100%;
+  width: 40%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+main p {
+  line-height: 1.5em;
+}
+
+main button {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--text-icons);
+  padding: 5px 10px;
+  margin: 5px 0;
+  display: block;
+}
+
+main button.inline {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+main button:active {
+  box-shadow: 0 0 0 2px var(--light-primary-color) inset;
+}
+
+#main-header {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#main-header * {
+  padding-bottom: 10px;
+}
+
+#main-header p {
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.body-section * {
+  margin-bottom: 10px;
+}
+
+#answer-type {
+  margin-top: 5px;
+  border-top: 1px solid var(--divider-color);
+  padding: 5px 0;
+}
+
+#answer-type h3 {
+  color: var(--secondary-text);
+  font-style: italic;
+}
+
+#score-display ol {
+  list-style: decimal inside;
+}
+
+#score-display li {
+  background-color: var(--light-primary-color);
+  margin: 0;
+  padding: 5px;
+}
+
+#score-display li:nth-of-type(even) {
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+}

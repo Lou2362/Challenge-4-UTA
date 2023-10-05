@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2><a href="#" id="view-scores">View Highscores</a></h2>
+      <h2>Time: <span id="time-remaining">0</span>s</h2>
+    </header>
+    <main>
+      <article id="main-header">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by ten seconds!
+        </p>
+        <button class="inline" id="start-game">Start Quiz</button>
+      </article>
+      <article id="game-questions" class="body-section hidden">
+        <h3>Question text Question text Question text</h3>
+        <ol>
+          <li><button>A Button with text</button></li>
+          <li><button>A Button with more text</button></li>
+          <li><button>A Button with even more text</button></li>
+          <li><button>A Button with text</button></li>
+        </ol>
+      </article>
+      <article id="game-end" class="body-section hidden">
+        <h3>All done!</h3>
+        <p>Your final score is <span id="final-score">20</span>.</p>
+        <form id="game-end-form">
+          <label for="initials">Enter initials: </label>
+          <input type="text" id="initials" maxlength="2" autocomplete="off" />
+          <button class="inline">Submit</button>
+        </form>
+      </article>
+      <article id="score-display" class="body-section hidden">
+        <h3>Highscores</h3>
+        <ol></ol>
+        <button class="inline" id="restart-game">Restart</button>
+        <button class="inline" id="clear-highscores">Clear Highscores</button>
+      </article>
+      <article id="answer-type" class="hidden">
+        <h3 id="answer-state">Wrong!</h3>
+      </article>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
