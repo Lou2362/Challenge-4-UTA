@@ -2,7 +2,7 @@ const questions = [
     {
       name: "What is the correct syntax for referring to an external script called xxx.js ",
       answers: ["<script href=xxx.js>", "<script name=xxx.js>", "<script src=xxx.js>"],
-      correct: 1,
+      correct: 0,
     },
     {
       name: "The external JavaScrpt file must contaiam the <scrpit> tag.",
@@ -10,7 +10,7 @@ const questions = [
         "False",
         "True",
       ],
-      correct: 1,
+      correct: 0,
     },
     {
       name: "How to write an IF statement in Javascript?",
@@ -20,12 +20,12 @@ const questions = [
         "if i == 5 then",
         "if i =5 then",
       ],
-      correct: 1,
+      correct: 0,
     },
     {
       name: "How can you add a comment in a JavaScript",
       answers: ["'This is a Comment", "//This is a Comment", "<!--This is a Comment"],
-      correct: 2,
+      correct: 1,
     },
   ];
   
